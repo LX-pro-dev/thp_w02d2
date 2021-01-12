@@ -1,10 +1,12 @@
 tab = []
 50.times do |i|
-	if i%2 == 0
 		if i < 8
-			tab[i]= "jean.dupont.0#{i+2}@email.fr"
+			tab[i]= "jean.dupont.0#{i+1}@email.fr"		
 		else
-			tab[i]= "jean.dupont.#{i+2}@email.fr"
+			tab[i]= "jean.dupont.#{i+1}@email.fr"	
 		end
-	end
+		
+		if i%2 == 1
+			puts "#{tab[i]}"
+		end
 end
